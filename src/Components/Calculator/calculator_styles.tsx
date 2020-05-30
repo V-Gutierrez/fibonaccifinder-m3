@@ -11,6 +11,7 @@ export const DevelopmentDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    overflow: scroll;
 `;
 
 export const Main = styled.main`
@@ -20,7 +21,7 @@ export const Main = styled.main`
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    height: 1000px;
+    min-height: 1000px;
 `;
 
 export const Result = styled.p`

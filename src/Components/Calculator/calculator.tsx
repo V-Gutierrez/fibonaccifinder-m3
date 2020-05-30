@@ -64,15 +64,6 @@ function FibonacciCalculator() {
                     Pelas diferenças entre convenções, para este cálculo, o zero
                     foi considerado o "zerézimo" termo.
                 </p>
-
-                <h2>Desenvolvimento: </h2>
-                <DevelopmentDiv>
-                    {FibonacciArr?.map((item: number) => (
-                        <NumberCard key={item * Math.random()}>
-                            {item}
-                        </NumberCard>
-                    ))}
-                </DevelopmentDiv>
             </Main>
         </>
     );
