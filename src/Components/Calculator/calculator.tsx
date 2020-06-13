@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { NumberCard, DevelopmentDiv, Main, Result } from './calculator_styles';
+import { Main, Result } from './calculator_styles';
 
 function FibonacciCalculator() {
-    const [FibonacciArr, setFibArr] = useState<number[]>();
     const [FeedBackStr, setFeedBackStr] = useState<string>();
 
     const FibCalc = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,20 +13,24 @@ function FibonacciCalculator() {
         switch (n) {
             case 0:
                 fibonacciSeq = [0];
+
                 break;
             case 1:
                 fibonacciSeq = [0, 1];
+                fibonacciSeq.splice(0, 1);
                 break;
             case 2:
                 fibonacciSeq = [0, 1, 1];
+                fibonacciSeq.splice(0, 1);
                 break;
             default:
                 fibonacciSeq = [0, 1, 1];
                 for (let index = 2; index < n; index++) {
-                    fibonacciSeq.push(
-                        fibonacciSeq[fibonacciSeq.length - 1] +
-                            fibonacciSeq[fibonacciSeq.length - 2],
-                    );
+                    let f1: any = BigInt(fibonacciSeq[fibonacciSeq.length - 1]);
+                    let f2: any = BigInt(fibonacciSeq[fibonacciSeq.length - 2]);
+
+                    fibonacciSeq.push(f1 + f2);
+                    fibonacciSeq.splice(0, 1);
                 }
                 break;
         }
@@ -37,11 +40,11 @@ function FibonacciCalculator() {
                 fibonacciSeq[fibonacciSeq.length - 1]
             } é o zerézimo dígito da sequência de Fibonacci`;
         } else {
-            whichNumberIs = `O ${n}º dígito da sequência de Fibonacci é ${
-                fibonacciSeq[fibonacciSeq.length - 1]
-            }`;
+            whichNumberIs = `O ${n}º dígito da sequência de Fibonacci é ${BigInt(
+                fibonacciSeq[fibonacciSeq.length - 1],
+            )}`;
         }
-        setFibArr(fibonacciSeq);
+
         setFeedBackStr(whichNumberIs);
         return whichNumberIs;
     };
@@ -60,6 +63,7 @@ function FibonacciCalculator() {
                     placeholder="Ex: 5 = quinta posição"
                 />
                 <Result>{FeedBackStr}</Result>
+
                 <p>
                     Pelas diferenças entre convenções, para este cálculo, o zero
                     foi considerado o "zerézimo" termo.
