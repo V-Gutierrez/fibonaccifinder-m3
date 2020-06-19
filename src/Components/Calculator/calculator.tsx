@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import { Main, Result } from './calculator_styles';
+import React, { useState } from 'react';
 
 function FibonacciCalculator() {
     const [FeedBackStr, setFeedBackStr] = useState<string>();

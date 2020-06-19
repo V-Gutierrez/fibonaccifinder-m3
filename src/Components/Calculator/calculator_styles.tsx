@@ -24,12 +24,17 @@ export const Main = styled.main`
     min-height: 1000px;
 `;
 
-export const Result = styled.p`
+export const Result = styled.div`
     border-radius: 15%;
-    background-color: #0000ffa8;
     width: 400px;
-    height: 120px;
+    min-height: 120px;
+    max-height: 100px;
     text-align: center;
-    color: white;
+    color: black;
+    font-weight: bold;
+    word-break: break-word;
+    overflow-wrap: wrap;
+    overflow-y: scroll;
+
     padding: 50px;
 `;
