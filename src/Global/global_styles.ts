@@ -14,9 +14,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
      -webkit-font-smoothing: antialiased;
-     background-color: #8affff;
-
-
+     background: url("https://cdn-cv.r4you.co/wp-content/uploads/2016/12/fibonacci_book4.jpg");
+     background-size: cover;
   }
 
   button {

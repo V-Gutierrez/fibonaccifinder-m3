@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {Provider} from 'react';
+
 import FibonacciCalculator from './Components/Calculator/calculator';
 import GlobalStyle from './Global/global_styles';
 
 function App() {
     return (
         <>
+            
             <GlobalStyle />
             <FibonacciCalculator />
         </>

@@ -5,6 +5,7 @@ export const NumberCard = styled.span`
     background-color: green;
     margin: 10px 5px;
     text-align: center;
+    color: white;
 `;
 
 export const DevelopmentDiv = styled.div`
@@ -12,6 +13,7 @@ export const DevelopmentDiv = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
     overflow: scroll;
+    color: white;
 `;
 
 export const Main = styled.main`
@@ -22,19 +24,29 @@ export const Main = styled.main`
     align-items: center;
     justify-content: space-evenly;
     min-height: 1000px;
+    background: #000000b0;
+    color: white;
+
+    input {
+        background: none;
+        border: none;
+        padding: 20px;
+        border-bottom: 2px solid white;
+        color: white;
+    }
 `;
 
 export const Result = styled.div`
-    border-radius: 15%;
-    width: 400px;
+    width: 100%;
     min-height: 120px;
-    max-height: 100px;
+    max-height: 400px;
+    height: 700px;
+    overflow-y: scroll;
+
     text-align: center;
-    color: black;
+    color: yellow;
     font-weight: bold;
     word-break: break-word;
     overflow-wrap: wrap;
-    overflow-y: scroll;
-
     padding: 50px;
 `;
