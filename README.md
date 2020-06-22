@@ -27,7 +27,7 @@ Fibonnaci Finder - Search any position in Fibonnaci
 <hr />
 
 <p align="center">
-<image width="400" height="500" src="https://user-images.githubusercontent.com/62355596/85238324-3d032180-b3fb-11ea-9012-bf266b248be5.png" />
+<image width="500" height="500" src="https://user-images.githubusercontent.com/62355596/85238324-3d032180-b3fb-11ea-9012-bf266b248be5.png" />
  </p>
 
 
