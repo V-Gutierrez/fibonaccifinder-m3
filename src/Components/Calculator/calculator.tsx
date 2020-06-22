@@ -19,6 +19,7 @@ function FibonacciCalculator() {
             alert(
                 'Para evitar problemas de estabilidade o cálculo só é feito até a 100000ª posição',
             );
+            setInputNumber(100000);
         } else {
             switch (n) {
                 case 0:

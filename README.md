@@ -16,13 +16,7 @@ Fibonnaci Finder - Search any position in Fibonnaci
     <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
     </a>
 
-
-
 </p>
-
-
-
-
 
 <hr />
 
@@ -30,16 +24,13 @@ Fibonnaci Finder - Search any position in Fibonnaci
 <image width="500" height="300" src="https://user-images.githubusercontent.com/62355596/85173530-6f691f00-b241-11ea-91ca-030e6ecad5a0.png" />
  </p>
 
-
-
 ## Features
 
-
-- ⚛  - **React** — A library to build user interfaces
-- 🖋   - **TypeScript** - JavaScript that scales
-- 💅  - **CSS** — styled-components
-- 💖  - **Lint** — ESlint/Prettier/Editor Config
-
+-   ⚛ - **React** — A library to build user interfaces
+-   🖋 - **TypeScript** - JavaScript that scales
+-   💅 - **CSS** — styled-components
+-   💖 - **Lint** — ESlint/Prettier/Editor Config
 
 ## Deploy
--  fibonnacifinder-vgutierrez.surge.sh
+
+-   fibonnacifinder-vgutierrez.surge.sh
