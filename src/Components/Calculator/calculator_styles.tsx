@@ -33,6 +33,7 @@ export const Main = styled.main`
         padding: 20px;
         border-bottom: 2px solid white;
         color: white;
+        width: 200px;
     }
 `;
 
